@@ -6,7 +6,9 @@
                  [org.clojure/tools.logging "1.3.0"]
                  [ch.qos.logback/logback-classic "1.3.15"]
                  [clj-kondo "2024.11.14"]
-                 [com.bhauman/rebel-readline "0.1.5"]]
+                 [com.bhauman/rebel-readline "0.1.5"]
+                 [scicloj/tablecloth "7.062"]
+                 [com.rpl/specter "1.1.6"]]
 
   :aliases {"kondo" ["run" "-m" "clj-kondo.main" "--lint" "src:test" "--parallel"]
             "rebl" ["trampoline" "run" "-m" "rebel-readline.main"]})
