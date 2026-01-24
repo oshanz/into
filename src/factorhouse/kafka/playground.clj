@@ -105,3 +105,18 @@
 (assoc-in {:name "oz"} [:name] "wow")
 
 (update-in {:count 12} [:count] #(+ % 29))
+
+
+(defn len [array] (count array))
+
+(len [1 2])
+
+
+(defn nested [vec] (for [key (keys vec)] key))
+
+(nested {:a {:a 1}, :b 2})
+
+
+(defn destruction [a] (let [[c d] (first a)] println c))
+
+(destruction {{:q 1} {:v 3}})
